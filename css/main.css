@@ -1,0 +1,225 @@
+body{
+    /*Margen*/
+    margin:0;
+    /*Margen para adentro*/
+    padding:0;
+    /*Tamaño de la letra*/
+    font-size: 13px;
+    /*Tipografía*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**********************************************/
+/****************************************/
+/********************************/
+/* Navegación */
+
+header{
+    /* width-ancho/// height-alto*/
+    width: 100%;
+    height: 60%;
+}
+
+header nav{
+    /*Elementos flexibles*/
+    display: flex;
+    /*Alinear a la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+width: 250px;
+/*Elimina viñetas*/
+list-style: none;
+/*Flexibilidad a nuestro componente*/
+display: flex;
+/*Centramos horizontalmente los elemetos dentro de la lista*/
+justify-content: center;
+/*Centramos verticalente la lista*/
+align-items: center;
+}
+
+a{
+    /*Eliminar la línea de abajo*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    /*Color de texto*/
+    color: rgb( 21,21,21);
+    /*Margen derecho*/
+    margin-right: 20px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /*Modifica el tamaño de la imagen al tamaño  de el contedor*/
+    background-size: contain;
+    /*Para eliminar la repetición de elemento*/
+    background-repeat: no-repeat;
+}
+
+ nav .nav-right-section img{
+    /*Redondear bordes*/
+    border-radius: 100px;
+    /*Margen izquierdo(separa menú de imagen)*/
+    margin-left: 20px;
+    width: 35px;
+ }
+
+ /**********************************************/
+/****************************************/
+/********************************/
+/* Main */
+main{
+    margin-top: 130px;
+    text-align: center;
+}
+/*Sección logo*/
+main .main-logo{
+    width: 530px;
+/*setea 0 al margen de arriba y abajo--auto (settea en auto bordes de izquierda y derecha)*/
+/*Vertical | Horizontal*/
+margin: 0 auto;
+margin-bottom: 40px;
+}
+/*Logo*/
+main .main-logo img{
+    height: 120px;
+}
+
+/*Sección input*/
+main .main-input{
+    width: 550px;
+    margin: 0 auto;
+    /* Separación entre buscador y botones*/
+    margin-bottom: 50px;
+}
+/*Caja con bordes redondeados*/
+main.main-input-container{
+    /*borde y pide 3 valores - anchura de línea, estilo y color*/
+    /*style: dotted, solid, inset*/
+    border: 1px solid #dfe1e5;
+    /* bordes redondeados */
+    border-radius: 20px;
+    width: 525px;
+    /*Componente flexible y que se muevan*/
+    /* Centrado*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+/*Cajita de input*/
+main .main-input input{
+    height: 35px;
+    border: none;
+    /*outline-borde cuando seleccionas elemento*/
+    outline: none;
+    width: 430px;
+}
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 13px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    height: 17px;
+    width: 17px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+    
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    height: 17px;
+    width: 17px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+}
+/*Botones*/
+main .main-buttons{
+    width: 550px;
+    /*Vertical - horizontal*/
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /* inline block: que estén en la misma línea*/
+    display: inline-block;
+}
+main .main-buttons button{
+    background-color: #f8f9fa;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #3c4043;
+    padding: 0px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+/*Efecto de sombra al pasar mouse*/
+main .main.input.container:hover{
+/*offset-x | offset-y | blur-radius | color*/
+box-shadow: 0px 0px 5px #20212447;
+}
+
+main .main-buttons button:hover{
+color: #202124;
+border: 1px solid #dadce0;
+box-shadow: 0 1px 1px #20212447;
+}
+/*Abajo*/
+footer{
+    width: 100%;
+    bottom: 0;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #f2f2f2;
+    font-size: 15px;
+    margin-top: 10%;
+    background-color: #f2f2f2;
+}
+
+footer nav .footer-left{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .footer-left a{
+    color: #3c4043;
+    margin: 25px;
+}
+
+footer nav .footer-right{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav .footer-right a{
+    color: #3c4043;
+    margin: 25px;
+}
